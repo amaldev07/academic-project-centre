@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeSkillz Academy | Kochi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e1e3f;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #1e1e3f, #3e3e91);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            padding: 30px 40px;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #1e1e3f;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #3e3e91;
+        }
+
+        .card i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #1e1e3f;
+        }
+
+        footer {
+            background: #1e1e3f;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .dual-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .dual-column {
+            flex: 1 1 400px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+        }
+
+        .dual-column h2 {
+            text-align: left;
+            font-size: 1.5em;
+            color: #1e1e3f;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CodeSkillz Academy</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#courses">Courses</a>
+            <a href="#projects">Projects</a>
+            <a href="#why-programs">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Real-Time Project & IT Training Institute in Kochi</h1>
+        <p>We build software applications for B.Tech and MCA students using Angular, Java & more.</p>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+            Based in Kochi, Kerala, CodeSkillz Academy offers hands-on software project development and IT training
+            programs tailored for B.Tech and MCA students. Our focus is on modern web technologies like Angular and
+            Java, helping students meet their academic goals with real-world software skills.
+        </p>
+    </section>
+
+    <section class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Academic Projects</h3>
+                <p>Custom final year and mini projects using real tech stacks for academic submissions.</p>
+            </div>
+            <div class="card">
+                <h3>Project Documentation</h3>
+                <p>Complete documentation, reports, and viva preparation support for students.</p>
+            </div>
+            <div class="card">
+                <h3>Online Support</h3>
+                <p>Live sessions and guidance for remote students with flexible timing.</p>
+            </div>
+            <div class="card">
+                <h3>Internship Projects</h3>
+                <p>Practical internship-style projects to boost resumes and placement readiness.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="courses">
+        <h2>Courses We Offer</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fab fa-angular"></i>
+                <h3>Angular</h3>
+                <p>Master modern front-end development with Angular.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <p>Build powerful UIs using the React.js framework.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Understand core web development concepts with JS.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <p>Backend development with Core and Advanced Java.</p>
+            </div>
+            <div class="card">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+                <p>Server-side JavaScript and API development.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-database"></i>
+                <h3>MySQL</h3>
+                <p>Learn structured data handling with MySQL databases.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Projects We’ve Done</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>College Event Portal</h3>
+                <p>A web app for event registration, coordination, and student participation tracking.</p>
+            </div>
+            <div class="card">
+                <h3>Online Voting System</h3>
+                <p>Secure voting platform with login, casting, and results dashboard built with Angular and Spring Boot.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Placement Management System</h3>
+                <p>Track eligible students, company visits, and placements with full admin dashboard.</p>
+            </div>
+            <div class="card">
+                <h3>E-learning Platform</h3>
+                <p>Online course and test system with roles for admin, students, and trainers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="why-programs">
+        <div class="dual-section">
+            <div class="dual-column">
+                <h2>Why Choose Our Training Institute</h2>
+                <ul>
+                    <li>Experienced trainers with industry expertise</li>
+                    <li>Hands-on project development</li>
+                    <li>Flexible batch timings</li>
+                    <li>Live support even after course completion</li>
+                    <li>100% course completion assurance</li>
+                    <li>Affordable pricing and group offers</li>
+                </ul>
+            </div>
+            <div class="dual-column">
+                <h2>Our Programs Are For</h2>
+                <ul>
+                    <li>Students looking for placement-ready projects</li>
+                    <li>Working professionals seeking upskilling</li>
+                    <li>Freelancers who want to boost their tech stack</li>
+                    <li>Anyone looking to switch into the IT field</li>
+                    <li>People interested in learning project-based coding</li>
+                    <li>Job seekers needing guided project help</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="stats">
+        <h2>Our Achievements</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>2000+</h3>
+                <p>Students Trained</p>
+            </div>
+            <div class="card">
+                <h3>150+</h3>
+                <p>Projects Delivered</p>
+            </div>
+            <div class="card">
+                <h3>10+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="card">
+                <h3>100%</h3>
+                <p>Project Satisfaction Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p style="text-align: center;">
+            <strong>Email:</strong> info@codeskillzacademy.com<br />
+            <strong>Phone:</strong> +91 8123 867849 / +91 7483939492<br />
+            <strong>Location:</strong> Kochi, Kerala, India
+        </p>
+    </section>
+
+
+    <footer>
+        &copy; 2025 CodeSkillz Academy. All rights reserved.
+    </footer>
+</body>
+
+</html>
